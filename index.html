@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script>
+        var input1 = window.prompt("Enter first input:");
+        var input2 = window.prompt("Enter second input:");
+
+        document.bgColor="white";
+
+        if(input1 > input2){
+            document.bgColor="lightblue"
+            document.writeln("<h1>firstInput > secondInput</h1>");
+        }else if (input2 > input1){
+            document.bgColor="lightgreen";
+            document.writeln("<h1>secondInput > firstInput</h1>");
+        }else{
+            document.bgColor="lightyellow";
+            document.writeln("<h1>secondInput == firstInput</h1>");
+        }
+    </script>
+
+    <input type= "button" value= "Show the first input" onclick="alert(input1)">
+    <input type= "button" value= "Show the second input" onclick="alert(input2)">
+
+</body>
+</html>
